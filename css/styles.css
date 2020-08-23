@@ -1,294 +1,104 @@
-/*---------------------------------- STYLES ----------------------------------*/
+/* ********************************* STYLES ********************************* */
 
-/*  FONTS
-font-family: 'Open Sans', sans-serif;
-font-family: 'Reenie Beanie', cursive;
-font-family: 'Lato', sans-serif;
-font-family: 'Montserrat', sans-serif;
+/* font-family: 'Anonymous Pro', monospace; */
+/* font-family: 'Open Sans', sans-serif; */
 
- */
-/* PALLETE
-creamy white: #e7e9f2; [for background]
-light grey: #d3d6de; [for background]
-brown: #2e2d29;
-#373737;
-light brown #b1adb1;
-grey: #7b7b84;
-black: #000000;
 
-color: #373737;
- */
 
-/*---------------------------------- GLOBAL ----------------------------------*/
 
-html {
-  box-sizing: border-box;
-}
-*, *:before, *::after {
-  box-sizing: inherit;
-}
 
+
+
+
+
+
+/* ********************************** GLOBAL ******************************** */
 body {
-  /* background-color: #e4e3e3; */
-  color: #373737;
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
 }
 
-header {
-  text-align: center;
-  background-color: #ffffff;
-  color: #ffffff;
-  position: relative;
-  display: block;
-  background-image: url(../images/pexels-oleg-magni-1040499.jpg);
-  background-size: cover;
-  background-position: center center;
-}
-
-header h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.475rem;
-  line-height: normal;
-  margin: 0 auto 10px auto;
-  font-weight: 200;
-  /* text-transform: uppercase; */
-}
-
-header h2 {
-  margin: 0 auto 150px;
-  font-weight: 230;
-  text-transform: uppercase;
-  color: #797979;
-  font-size: 1.25rem;
-}
-
-footer {
-  text-align: center;
-  /* background-color: #000000; */
-  background-color: #e7e9f2;
-  color: #797979;
-}
-
-img {
-  width: 300px;
-}
-
-h2 {
-  font-size: 1.25rem;
-  line-height: 1.2;
-  margin: 0 auto;
-  font-weight: 200;
-  text-transform: uppercase;
-  color: #797979;
-}
-
-h1, h2 {
-  font-weight: 200;
-}
-
-h3 {
-  margin-bottom: 0;
-  font-size: 1rem;
-}
-
-.content-wrapper {
-  /* max-width: 1000px; */
-  width: 85%;
-  margin: 0 auto;
-  padding: 60px 0;
-}
-
-.item-details h3 + p {
-  font-style: italic;
-}
-
-.item-details h3 ~ p {
-  margin: 0;
-}
-
-.divider > section {
-  border-bottom: 1px dashed #204051;
-  padding: 25px 0;
-}
-
-.divider > section:last-of-type {
-  border-bottom-style: none;
-}
-
-
-/*------------------------------- LANDING PAGE -------------------------------*/
-
-.landing-page {
-  max-width: 1200px;
-  width: 85%;
-  margin: 0 auto;
-  padding: 320px 10px 30px;
-}
-
-.social-media {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-}
-
-.social-media a {
-  display: inline-block;
-  padding: 10px 10px 0 0;
-}
-
-/*---------------------------- PROFILE / ABOUT ME ----------------------------*/
-
-.profile {
-  /* display: grid; */
-  /* grid-template-columns: 1fr 2fr; */
-  /* column-gap: 20px; */
-  padding-bottom: 30px;
-}
-
-.profile h2 {
+.container-fluid {
+  padding: 7% 15%;
   text-align: center;
 }
 
 
-.profile img {
-  display: block;
-  margin: 0 auto;
-  vertical-align: middle;
-  width: 200px;
-  /* height: 100px; */
-  border-radius: 50%;
+
+
+
+
+
+/* ****************************** LANDING PAGE ****************************** */
+
+#landing-page .container-fluid {
+  padding: 34% 15% 5%;
 }
 
-.profile-photo {
-  margin-bottom: 50px;
-}
-
-.profile-summary {
+.lightbulb {
+  position: absolute;
+  z-index: -1;
   text-align: center;
 }
 
-.profile-summary p {
-  color: #797979;
-  font-size: 1.15rem;
-  font-weight: 100;
-  line-height: 1.5;
-}
-
-/*---------------------------------- SKILLS ----------------------------------*/
-
-.skills {
-  text-align: center;
-  background-color: #e7e9f2;
-  /* height: 500px; */
-
-}
-
-.skills-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* grid-auto-rows: 200px; */
-  grid-gap: 1rem;
-  padding: 20px;
-  margin-top: 1rem;
-}
-
-.skill-item {
-  border: 2px solid black;
-  padding: 1em;
-}
-
-.skill-item img {
-  width: 100px;
-  /* height: 150px; */
-  margin-bottom: 1rem;
-}
-
-.skill-details {
-
-}
-
-/*------------------------------ WORK EXPERIENCE -----------------------------*/
-
-.work-experience {
-  /* background-color: #e7e9f2; */
-
-}
-
-.work-experience h2 {
-  text-align: center;
-}
-
-.job-item {
-display: grid;
-grid-template-columns: 1fr 2fr;
-column-gap: 1em;
-}
-
-/* .job-details {
-
-}
-
-.job-summary {
-
-} */
-/*--------------------------------- PORTFOLIO --------------------------------*/
-
-.portfolio {
-  background-color: #e7e9f2;
-  height: 500px;
-}
-
-
-/*--------------------------------- EDUCATION --------------------------------*/
-
-.education {
-  background-color: #ffffff;
-  /* background-image: url(../images/joanna-kosinska-unsplash.jpg); */
-  /* background-size: cover; */
-  /* background-position: top right; */
-  padding-bottom: 100px;
-}
-
-.education h2 {
-  text-align: center;
-}
-
-.education p {
+.lightbulb img {
   width: 60%;
 }
 
-/*------------------------------ CONTACT DETAILS -----------------------------*/
-
-.contact-info {
-  /* background-color: #e4e3e3; */
+.title-text h1 {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 4rem;
+  margin: 0;
 }
 
-.zero {
-  padding: 1em 0;
-  /* margin: 0; */
+.title-text p {
+  color: #f8b500;
+  text-transform: uppercase;
+  font-size: 1.25rem;
 }
 
-.zero p {
-  margin: 0 auto;
+.title-socials {
+  position: fixed;
+  z-index: 1;
+  right: 3%;
+  top: 27%;
+  /* text-align: right; */
 }
 
-.contact-list {
+.title-socials ul {
   list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
 }
 
-.contact-list a {
-  padding: 1rem;
-  display: inline-block;
+.title-socials ul li {
+}
+
+.socials-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  background-color: #34313a;
+  margin: 1rem 1%;
+}
+
+.socials-icon:hover {
+  background-color: #f8b500;
+}
+
+.socials-icon i {
+  color: #ffffff;
+}
+
+.title-text {
+  /* padding: 15% auto; */
+
 }
 
 
-/****/
+
+
+
+
+
+
+
+
+/* ***************************** GLOBAL STYLES ****************************** */
